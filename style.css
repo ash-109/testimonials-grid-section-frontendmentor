@@ -1,0 +1,153 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+:root{
+    --Moderate-violet: rgb(117, 65, 200);
+--Very-dark-grayish-blue: hsl(217, 19%, 35%);
+--Very-dark-blackish-blue: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+
+--Light-gray: hsl(0, 0%, 81%);
+--Light-grayish-blue: hsl(210, 46%, 95%);
+
+
+}
+
+*,::before,::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--Light-gray);
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+font-family: 'Barlow Semi Condensed';
+}
+.container{
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 55% 45%;
+    column-gap: 1.5rem;
+    row-gap: 1.2rem;
+}
+.testimonials{
+    padding: 15px 30px;
+    border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+justify-content: center;   
+    
+}
+.testimonials h1{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+.text-dark{
+color: var(--Very-dark-grayish-blue);  
+}
+
+.testimonials .testimonial-text{
+color: rgba(128, 128, 128, 0.6);
+font-size: 0.7rem;
+line-height: 1rem;
+
+}
+.header{
+display: flex;
+align-items: center;
+margin-bottom: 1rem;
+   }
+
+.header img{
+    border-radius: 50px;
+    width: 26px;
+    margin-right: 12px;
+}
+.header-text {
+display: flex;
+flex-direction: column;
+}
+.header-text .name{
+font-size: 0.75rem;
+}
+.header-text .statut{
+font-size: 0.6rem;
+color: var(--Very-dark-grayish-blue);
+}
+.header-text p{
+    margin: 0;
+
+}
+
+.daniel{
+    background: var(--Moderate-violet);
+    grid-column: 1/3;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0;
+}
+.daniel img{
+    border: 2px solid rgb(167 117 241);
+}
+.jonathan{
+    background: var(--Very-dark-grayish-blue);
+}
+.kira{
+    background: var(--White);
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+.jeanette{
+    background: var(--White);
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.patrick{
+    background: var(--Very-dark-blackish-blue);
+    grid-column: 2/4;
+}
+.patrick img{
+    border: 2px solid var(--Moderate-violet);
+}
+.daniel h1, .jonathan h1, .patrick h1{
+    color: var(--White);
+}
+.header-text-white{
+    color: var(--White);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 16px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); 
+    text-decoration: none;}
